@@ -1,0 +1,307 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.affiliation {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #1a5c8a;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Paper Section */
+.paper-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    border-left: 5px solid #2980b9;
+}
+
+.paper-title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.paper-links {
+    margin: 25px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.button.primary {
+    background-color: #2980b9;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #1a5c8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button.secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: 2px solid #2980b9;
+}
+
+.button.secondary:hover {
+    background-color: #d5dbdb;
+}
+
+/* Abstract */
+.abstract {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.abstract p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.abstract strong {
+    color: #2c3e50;
+}
+
+/* Bio and Additional Sections */
+.bio-section p,
+.additional-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.additional-section ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.additional-section li {
+    margin-bottom: 8px;
+}
+
+/* Paper Items */
+.paper-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 3px solid #95a5a6;
+}
+
+.paper-item h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.paper-item p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+.paper-item a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.paper-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #ecf0f1;
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+    }
+
+    .affiliation {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .paper-links {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .contact {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .paper-section {
+        padding: 15px;
+    }
+
+    .abstract {
+        padding: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .button {
+        display: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}

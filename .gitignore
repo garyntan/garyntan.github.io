@@ -1,0 +1,17 @@
+# PDF files (uncomment if you want to track them in git)
+# *.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
