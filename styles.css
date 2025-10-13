@@ -186,6 +186,7 @@ h4 {
     margin-left: 0;
     margin-bottom: 15px;
     list-style: none;
+    padding-left: 0;
 }
 
 .additional-section li {
@@ -193,6 +194,12 @@ h4 {
     color: #555;
     font-size: 0.95em;
     padding-left: 0;
+}
+
+.additional-section li:before {
+    content: "• ";
+    color: #999;
+    margin-right: 8px;
 }
 
 /* Paper Items */
@@ -271,7 +278,7 @@ footer p {
     }
 
     .paper-links {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .contact {
