@@ -52,10 +52,11 @@ Add visual elements to make your papers stand out:
 - `working-paper-2-image.jpg` - Image for working paper 2
 
 **Image Guidelines:**
-- **Recommended size**: 400x300 pixels for job market paper, 240x180 pixels for working papers
+- **Recommended source size**: 400x300 pixels (or similar 4:3 ratio) for job market paper, 240x180 pixels for working papers
+- **Display size**: Images will be displayed at 200px width for job market paper and 120px width for working papers, scaled proportionally
 - **Format**: JPG or PNG
 - **Content ideas**: Key graphs, charts, maps, or visual summaries from your research
-- **Tip**: Export a key figure from your paper at high resolution and crop appropriately
+- **Tip**: Export a key figure from your paper at high resolution (2x the display size for retina screens) and crop appropriately
 
 If you don't want to include images, you can remove the image elements from the HTML or leave the placeholders - they will show broken image icons which users can ignore.
 
