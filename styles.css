@@ -183,9 +183,9 @@ h4 {
 }
 
 .additional-section ul {
-    margin-left: 0;
+    margin-left: 20px;
     margin-bottom: 15px;
-    list-style: none;
+    list-style: disc;
     padding-left: 0;
 }
 
@@ -193,13 +193,10 @@ h4 {
     margin-bottom: 10px;
     color: #555;
     font-size: 0.95em;
-    padding-left: 0;
 }
 
-.additional-section li:before {
-    content: "• ";
+.additional-section li::marker {
     color: #999;
-    margin-right: 8px;
 }
 
 /* Paper Items */
