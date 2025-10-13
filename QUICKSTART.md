@@ -44,7 +44,22 @@ Place these files in the same directory:
 - `cv.pdf` - Your curriculum vitae
 - Any additional working paper PDFs mentioned in the HTML
 
-### 7. Deploy Your Website
+### 7. Add Paper Images (Optional but Recommended)
+
+Add visual elements to make your papers stand out:
+- `paper-image.jpg` - An image for your job market paper (e.g., key figure, chart, or diagram from the paper)
+- `working-paper-1-image.jpg` - Image for working paper 1
+- `working-paper-2-image.jpg` - Image for working paper 2
+
+**Image Guidelines:**
+- **Recommended size**: 400x300 pixels for job market paper, 240x180 pixels for working papers
+- **Format**: JPG or PNG
+- **Content ideas**: Key graphs, charts, maps, or visual summaries from your research
+- **Tip**: Export a key figure from your paper at high resolution and crop appropriately
+
+If you don't want to include images, you can remove the image elements from the HTML or leave the placeholders - they will show broken image icons which users can ignore.
+
+### 8. Deploy Your Website
 
 **Option A: GitHub Pages (Recommended)**
 1. Repository already exists at https://github.com/garyntan/website
@@ -84,9 +99,10 @@ npx http-server
 
 1. **Keep it simple**: Don't add too much content. Focus on your job market paper.
 2. **Professional photo**: Consider adding a professional headshot in the header.
-3. **Update regularly**: Keep your abstract and CV up to date.
-4. **Test links**: Make sure all PDF links work before sending to potential employers.
-5. **Mobile check**: Always check how your site looks on mobile devices.
+3. **Use compelling visuals**: Add images showing key figures or results from your papers to make them more engaging.
+4. **Update regularly**: Keep your abstract and CV up to date.
+5. **Test links**: Make sure all PDF links work before sending to potential employers.
+6. **Mobile check**: Always check how your site looks on mobile devices.
 
 ## Need Help?
 
