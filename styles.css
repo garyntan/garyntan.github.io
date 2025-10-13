@@ -162,7 +162,7 @@ h4 {
 
 .abstract p {
     margin-bottom: 15px;
-    text-align: justify;
+    text-align: left;
 }
 
 .abstract strong {
@@ -173,7 +173,7 @@ h4 {
 .bio-section p,
 .additional-section p {
     margin-bottom: 15px;
-    text-align: justify;
+    text-align: left;
 }
 
 .additional-section ul {
@@ -301,7 +301,7 @@ footer p {
         display: none;
     }
 
-    a[href]:after {
+    a[href^="http"]:after {
         content: " (" attr(href) ")";
     }
 }
