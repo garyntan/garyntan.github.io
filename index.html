@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Market Paper - Economics">
+    <title>Job Market Paper | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">Economics PhD Candidate</p>
+            <p class="affiliation">University Name | Department of Economics</p>
+            <div class="contact">
+                <a href="mailto:your.email@university.edu">your.email@university.edu</a> | 
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | 
+                <a href="cv.pdf" target="_blank">CV</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="paper-section">
+                <h2>Job Market Paper</h2>
+                <h3 class="paper-title">Your Paper Title: A Comprehensive Analysis of Economic Phenomena</h3>
+                
+                <div class="paper-links">
+                    <a href="paper.pdf" class="button primary" target="_blank">Download Paper (PDF)</a>
+                    <a href="#abstract" class="button secondary">Read Abstract</a>
+                </div>
+
+                <div id="abstract" class="abstract">
+                    <h4>Abstract</h4>
+                    <p>
+                        This paper investigates [your research topic]. Using [your methodology], 
+                        I analyze [your data/approach] to understand [your research question]. 
+                        The results show that [key findings]. These findings have important 
+                        implications for [policy/theory implications].
+                    </p>
+                    <p>
+                        <strong>Keywords:</strong> Economics, [Keyword 1], [Keyword 2], [Keyword 3]
+                    </p>
+                    <p>
+                        <strong>JEL Codes:</strong> [Code1], [Code2], [Code3]
+                    </p>
+                </div>
+            </section>
+
+            <section class="bio-section">
+                <h2>About Me</h2>
+                <p>
+                    I am a PhD candidate in Economics at [University Name], specializing in 
+                    [your field of study]. My research focuses on [research interests]. 
+                    I am on the job market in [Year] and available for interviews at the 
+                    [Conference Name] meetings.
+                </p>
+                <p>
+                    Prior to my doctoral studies, I received my [previous degree] from 
+                    [previous institution]. My research has been supported by [grants/fellowships].
+                </p>
+            </section>
+
+            <section class="additional-section">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>Primary Field: [e.g., Labor Economics, Public Economics, etc.]</li>
+                    <li>Secondary Field: [e.g., Applied Econometrics, Development Economics, etc.]</li>
+                    <li>Specific Topics: [e.g., Education, Health Economics, etc.]</li>
+                </ul>
+            </section>
+
+            <section class="additional-section">
+                <h2>Other Papers</h2>
+                <div class="paper-item">
+                    <h4>Working Paper Title 1</h4>
+                    <p>Brief description of the paper. <a href="working-paper-1.pdf" target="_blank">PDF</a></p>
+                </div>
+                <div class="paper-item">
+                    <h4>Working Paper Title 2</h4>
+                    <p>Brief description of the paper. <a href="working-paper-2.pdf" target="_blank">PDF</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Last updated: <span id="last-updated"></span></p>
+            <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Auto-update dates
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>
