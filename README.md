@@ -7,6 +7,7 @@ A professional, clean website template for showcasing your economics job market 
 - **Modern Design**: Clean, academic appearance suitable for economics job market candidates
 - **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
 - **Easy to Customize**: Simple HTML and CSS structure for quick personalization
+- **Paper Images**: Support for visual thumbnails/images for each paper to showcase key figures or results
 - **Professional Sections**: 
   - Header with name, affiliation, and contact information
   - Job market paper with abstract and download link
@@ -28,6 +29,9 @@ A professional, clean website template for showcasing your economics job market 
    - Place your job market paper PDF as `paper.pdf` in the same directory
    - Add your CV as `cv.pdf`
    - (Optional) Add working papers with appropriate filenames
+   - (Optional but recommended) Add images for your papers:
+     - `paper-image.jpg` for job market paper
+     - `working-paper-1-image.jpg`, `working-paper-2-image.jpg`, etc. for other papers
 
 3. **Deploy the website**:
    - Upload all files to your web hosting service
@@ -37,11 +41,14 @@ A professional, clean website template for showcasing your economics job market 
 
 ```
 .
-├── index.html       # Main HTML file with website structure
-├── styles.css       # CSS styling for the website
-├── README.md        # This file
-├── paper.pdf        # Your job market paper (add this)
-└── cv.pdf           # Your CV (add this)
+├── index.html                    # Main HTML file with website structure
+├── styles.css                    # CSS styling for the website
+├── README.md                     # This file
+├── QUICKSTART.md                 # Quick start guide
+├── paper.pdf                     # Your job market paper (add this)
+├── cv.pdf                        # Your CV (add this)
+├── paper-image.jpg               # Image for job market paper (optional)
+└── working-paper-*-image.jpg     # Images for working papers (optional)
 ```
 
 ## Customization Tips
