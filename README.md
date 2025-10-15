@@ -81,6 +81,21 @@ This website works in all modern browsers:
 - Safari
 - Edge
 
+## Google Search & SEO
+
+This website is optimized for search engines and includes:
+- Properly configured `robots.txt` and `sitemap.xml`
+- Comprehensive meta tags for SEO
+- Structured data (JSON-LD) for rich search results
+- `.nojekyll` file for GitHub Pages compatibility
+
+**For detailed information on verifying your site is searchable on Google:**
+- See `GOOGLE_SEARCH_VERIFICATION.md` for step-by-step instructions
+- See `SEO_GUIDE.md` for technical details on SEO configuration
+
+**Quick check if your site is indexed:**
+Search Google for: `site:garyntan.github.io`
+
 ## License
 
 Feel free to use and modify this template for your personal academic website.
