@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=jmp_GT.pdf">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to Job Market Paper</title>
     
@@ -15,16 +14,19 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
       
-      // Track redirect as a file download event
-      gtag('event', 'file_download', {
-        'file_name': 'jmp_GT.pdf',
-        'file_extension': 'pdf',
-        'link_text': 'Direct Link Redirect'
-      });
-    </script>
-    
-    <script>
+      // Track redirect as a file download event, then redirect after a brief delay
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'file_download', {
+          'file_name': 'jmp_GT.pdf',
+          'file_extension': 'pdf',
+          'link_text': 'Direct Link Redirect'
+        });
+      }
+      
+      // Delay redirect slightly to ensure analytics event is sent
+      setTimeout(function() {
         window.location.replace("jmp_GT.pdf");
+      }, 100);
     </script>
 </head>
 <body>
