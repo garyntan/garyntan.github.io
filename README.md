@@ -15,6 +15,7 @@ A professional, clean website template for showcasing your economics job market 
   - Additional working papers
   - About section
 - **Auto-updating Dates**: JavaScript automatically updates the current year and last modified date
+- **Analytics Tracking**: Built-in Google Analytics 4 support for tracking page views and PDF downloads
 
 ## How to Use
 
@@ -80,6 +81,16 @@ This website works in all modern browsers:
 - Firefox
 - Safari
 - Edge
+
+## Analytics
+
+The website includes Google Analytics 4 tracking for:
+- Page views (homepage and redirect pages)
+- File downloads (job market paper and CV)
+
+**To activate analytics:**
+- See `ANALYTICS_SETUP.md` for complete setup instructions
+- You'll need to create a Google Analytics account and replace the placeholder Measurement ID
 
 ## Google Search & SEO
 
