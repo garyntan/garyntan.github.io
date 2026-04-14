@@ -143,6 +143,12 @@ h4 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.paper-image embed {
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .paper-title {
     font-size: 1.5em;
     color: #2c3e50;
