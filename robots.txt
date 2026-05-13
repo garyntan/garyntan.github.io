@@ -1,6 +1,10 @@
 # Allow all search engines to crawl the entire site
 User-agent: *
 Allow: /
+Disallow: /CV_GT.pdf
+Disallow: /did_emphist_any_gross_inc.pdf
+Disallow: /jmp_GT.pdf
+Disallow: /wagecyc_LMTZ.pdf
 
 # Sitemap location
 Sitemap: https://garyntan.github.io/sitemap.xml
