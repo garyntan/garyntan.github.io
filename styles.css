@@ -310,7 +310,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 220px;
     gap: 14px;
-    align-items: start;
+    align-items: center;
 }
 
 .dropdown-text p {
@@ -318,6 +318,8 @@ h4 {
 }
 
 .dropdown-figure {
+    display: flex;
+    align-items: center;
     justify-self: end;
 }
 
