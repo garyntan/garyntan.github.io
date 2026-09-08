@@ -56,3 +56,13 @@ footer p { margin:0; }
 @media(max-width:600px) { .container { width:calc(100% - 36px); } .site-nav { align-items:flex-start; gap:16px; } .nav-links { gap:16px; } header { padding:32px 0 24px; } .header-content { flex-direction:column-reverse; align-items:flex-start; gap:24px; } .profile-pic { width:108px; height:108px; } .paper-item h4 { font-size:1.2rem; } .paper-item { padding:24px 0; } .figure-dialog { padding:12px; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 @media print { .container { width:100%; } .site-nav,.figure-dialog { display:none; } .paper-item { break-inside:avoid; } }
+
+/* Full-width alternating section bands, without horizontal overflow. */
+main > section { margin-block:0; padding-block:40px; }
+main > section:nth-of-type(even) {
+    background:#f3f5f6;
+    box-shadow:0 0 0 100vmax #f3f5f6;
+    clip-path:inset(0 -100vmax);
+}
+@media(max-width:600px) { main > section { padding-block:28px; } }
+@media print { main > section:nth-of-type(even) { background:white; box-shadow:none; clip-path:none; } }
