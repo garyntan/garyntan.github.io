@@ -12,7 +12,9 @@ a:focus-visible,summary:focus-visible,button:focus-visible { outline:3px solid v
 .site-nav .brand { color:var(--ink); font-weight:650; }
 .nav-links { display:flex; flex-wrap:wrap; gap:28px; }
 header { padding:52px 0 36px; }
-.header-content { display:flex; align-items:center; justify-content:space-between; gap:48px; }
+.header-content { display:flex; align-items:center; justify-content:flex-start; gap:32px; }
+.header-text { min-width:0; }
+.header-profile { flex:0 0 auto; }
 h1 { font-size:clamp(2.5rem,4vw,4.25rem); line-height:1.1; font-weight:600; letter-spacing:-.045em; margin:0 0 20px; }
 .subtitle { font-size:1.25rem; margin:0 0 4px; }
 .affiliation { color:var(--muted); margin:0 0 18px; }
