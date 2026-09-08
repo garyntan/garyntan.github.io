@@ -67,6 +67,7 @@
 </head>
 <body>
     <div class="container">
+        <nav class="site-nav" aria-label="Main navigation"><a class="brand" href="#">Garyn Tan</a><div class="nav-links"><a href="#research">Research</a><a href="#about">About</a><a href="CV_GT.pdf" target="_blank" rel="noopener">CV</a></div></nav>
         <header>
             <div class="header-content">
                 <div class="header-text">
@@ -74,9 +75,9 @@
                     <p class="subtitle">Postdoctoral Researcher</p>
                     <p class="affiliation">FAIR | Norwegian School of Economics (NHH)</p>
                     <div class="contact">
-                        <p style="display: inline;">garyn.tan [at] nhh.no </p> | 
-                        <a href="https://www.linkedin.com/in/garyn-tan/" target="_blank" style="display: inline;">LinkedIn</a> | 
-                        <a href="https://scholar.google.com/citations?user=hDMH8aYAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
+                        <p style="display: inline;">garyn.tan [at] nhh.no </p> 
+                        <a href="https://www.linkedin.com/in/garyn-tan/" target="_blank" style="display: inline;">LinkedIn</a> 
+                        <a href="https://scholar.google.com/citations?user=hDMH8aYAAAAJ&hl=en" target="_blank">Google Scholar</a> 
                         <a href="CV_GT.pdf" target="_blank">CV</a>
                     </div>
                 </div>
@@ -87,7 +88,7 @@
         </header>
 
         <main>
-            <section class="bio-section">
+            <section class="bio-section" id="about">
                 <h2>About Me</h2>
                 <p>
                     Hello! I am a Postdoctoral Researcher at the Economics Centre for Experimental Research on Fairness, Inequality and Rationality (FAIR) at the Norwegian School of Economics (NHH), specialising in applied microeconomics.
@@ -113,25 +114,24 @@
             </section> -->
 
             <section class="additional-section">
-               <h2>Working Papers</h2>
+               <h2 id="research">Working Papers</h2>
                 <div class="paper-item">
                     <h4>The Labour Market Effects of Insurance for Disability Supports: Evidence from the National Disability Insurance Scheme in Australia</h4>
                    <p><strong>Author:</strong> Garyn Tan<br>
                    <strong>Status:</strong> Review and Resubmit at Labour Economics<br>
                    <strong>Award:</strong> Best PhD Paper Award, Swiss Society of Health Economics Workshop 2025<br>
-                   <strong>Presented at:</strong> OECD WiP Seminar 2025; SGGÖ 2025; Melbourne Institute Seminar 2025; UZH Empirical Micro Seminar 2025; National Disability Insurance Agency 2024</p>
+                   <strong>Presented at:</strong> Berlin PhD Conference in Economics 2026; FAIR Day NHH 2026; OECD WiP Seminar 2025; SGGÖ 2025; Melbourne Institute Seminar 2025; UZH Empirical Micro Seminar 2025; National Disability Insurance Agency 2024</p>
                    <a href="jmp_GT.pdf" target="_blank">[paper]</a>
                    <details class="paper-dropdown">
-                       <summary>Abstract</summary>
+                       <summary>Abstract &amp; figure</summary>
                        <div class="dropdown-content has-figure">
                            <div class="dropdown-text">
                                <p>Most evidence on disability insurance focuses on income-replacement schemes that insure foregone earnings but depress labour market outcomes. Yet little is known about the economic effects of programmes that fund disability-related supports – aids and services which assist with daily living and expand functional capacity. This paper provides the first causal evidence on the labour market effects of large-scale funding for disability supports. Leveraging a staggered difference-in-differences design around the roll-out of Australia's National Disability Insurance Scheme (NDIS), I find that the reform increased participants' total annual earnings by 15.6% in the five years following exposure, while receipt of income-replacement benefits declined. The effects are highly heterogeneous: earnings gains are driven almost entirely by participants with prior labour force attachment, while those with no employment history remain unaffected. Using a novel administrative dataset on funding allocations and participant outcomes, I provide evidence that the NDIS increased economic participation mainly through indirect channels – by reducing capacity constraints and increasing autonomy – rather than through direct channels such as employment services or training supports. The results demonstrate that supports-focused disability policy can raise economic participation without incurring the labour trade-offs typical of income-replacement schemes.</p>
                            </div>
-                           <div class="dropdown-figure">
+                           <figure class="dropdown-figure">
                                <a href="jmp_pic.png" target="_blank">
-                                   <img src="jmp_pic.png" alt="Disability Insurance Paper Visual">
-                               </a>
-                           </div>
+                                   <img src="jmp_pic.png" alt="Figure accompanying the paper on labour market effects of disability supports">
+                               </a><figcaption>Click figure to enlarge.</figcaption></figure>
                        </div>
                    </details>
                </div>
@@ -190,16 +190,15 @@
                    <p><strong>Authors:</strong> Josef Zweimüller, Andreas Mueller, Dominik Lukač and Garyn Tan<br>
                    <strong>Status:</strong> In progress</p>
                    <details class="paper-dropdown">
-                       <summary>Description</summary>
+                       <summary>Description &amp; figure</summary>
                        <div class="dropdown-content has-figure">
                            <div class="dropdown-text">
                                <p>This project studies the wage cyclicality of new hires using a long panel of linked employer–employee data from Austria. Using AKM decompositions, we show that the strong procyclicality of entry wages for job-to-job movers and hires from non-employment is primarily driven by cyclical worker reallocation across firms rather than wage flexibility. Once composition and selection effects are removed, the cyclicality of new hire wages is modest. We further link the micro-level wage regressions to aggregate reallocation dynamics, clarifying their connection to cleansing and sullying effects.</p>
                            </div>
-                           <div class="dropdown-figure">
+                           <figure class="dropdown-figure">
                                <a href="fig_tv_decomp_simple_web.png" target="_blank">
-                                   <img src="fig_tv_decomp_simple_web.png" alt="Wage Cyclicality Paper Visual">
-                               </a>
-                           </div>
+                                   <img src="fig_tv_decomp_simple_web.png" alt="Wage cyclicality decomposition figure">
+                               </a><figcaption>Click figure to enlarge.</figcaption></figure>
                        </div>
                    </details>
                </div>
@@ -227,7 +226,33 @@
         </footer>
     </div>
 
+    <dialog class="figure-dialog" aria-label="Enlarged research figure">
+        <form method="dialog"><button>Close</button></form>
+        <img alt="">
+    </dialog>
     <script>
+        document.querySelectorAll('.dropdown-content').forEach(content => {
+            const figures = Array.from(content.querySelectorAll(':scope > .dropdown-figure'));
+            if (figures.length < 2) return;
+            content.classList.remove('has-figure');
+            content.classList.add('has-figures');
+            const grid = document.createElement('div');
+            grid.className = 'figure-grid';
+            figures.forEach(figure => grid.append(figure));
+            content.append(grid);
+        });
+        const figureDialog = document.querySelector('.figure-dialog');
+        document.querySelectorAll('.dropdown-figure a').forEach(link => {
+            link.addEventListener('click', event => {
+                if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+                event.preventDefault();
+                const source = link.querySelector('img');
+                const enlarged = figureDialog.querySelector('img');
+                enlarged.src = source.src;
+                enlarged.alt = source.alt;
+                figureDialog.showModal();
+            });
+        });
         // Auto-update dates
         document.getElementById('current-year').textContent = new Date().getFullYear();
         document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', { 
