@@ -68,3 +68,12 @@ main > section:nth-of-type(even) {
 }
 @media(max-width:600px) { main > section { padding-block:28px; } }
 @media print { main > section:nth-of-type(even) { background:white; box-shadow:none; clip-path:none; } }
+
+/* Manually adjust the photo on desktop. */
+@media (min-width: 1001px) {
+    .header-profile {
+        position: relative;
+        left: 40px;
+        top: 0px;
+    }
+}
